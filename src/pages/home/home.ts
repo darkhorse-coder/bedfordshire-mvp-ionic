@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { ServicesProvider } from '../../providers/services/services';
 import { NavParams } from 'ionic-angular/navigation/nav-params';
 import { CarDetailPage } from '../car-detail/car-detail';
+import { CartPage } from '../cart/cart';
 
 @Component({
     selector: 'page-home',
@@ -63,6 +64,10 @@ export class HomePage {
         }
 
         this.navCtrl.push(CarDetailPage, selectedCar);
+    }
+
+    goCartPage () {
+        this.navCtrl.push(CartPage);
     }
 
 }

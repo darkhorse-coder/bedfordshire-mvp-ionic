@@ -3,7 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
 import { ModalController } from 'ionic-angular/components/modal/modal-controller';
 import { AuthenticationPage } from '../authentication/authentication';
-import { SuccessfulPage } from '../successful/successful';
+import { ToastController } from 'ionic-angular/components/toast/toast-controller';
 
 /**
  * Generated class for the CarDetailPage page.
@@ -23,14 +23,24 @@ export class CarDetailPage {
     @ViewChild('map') mapElement: ElementRef;
     map : any;
     car : any;
+    user : any;
+    cartAry : any;
+
     constructor(
         public navCtrl: NavController, 
         public navParams: NavParams, 
         public alertCtrl: AlertController,
-        public modalCtrl: ModalController
+        public modalCtrl: ModalController,
+        public toastCtrl: ToastController
     ) {
         this.car = this.navParams.data;
+        localStorage.setItem('carInfo',JSON.stringify(this.car));
+        if(localStorage.getItem('cart'))
+            this.cartAry = JSON.parse(localStorage.getItem('cart'));
+        else
+            this.cartAry = new Array();
     }
+    
     ionViewDidLoad () {
         this.loadMap();
     }
@@ -55,14 +65,23 @@ export class CarDetailPage {
     }   
 
     onBuyCar (car_id: number) {
-        if (localStorage.getItem('isLogin'))
+        if (eval(localStorage.getItem('isLogin'))){
+            this.user = JSON.parse(localStorage.getItem('userInfo'));
+            this.purchaseCar();
+        } else {
+            localStorage.setItem('gameState','1'); // buy state 1
             this.confirmAuth();
-        else
-            this.confirmAuth();
+        }
     }
 
     onAddToCart (car_id: number) {
-        this.confirmAuth();
+        if (eval(localStorage.getItem('isLogin'))){
+            this.user = JSON.parse(localStorage.getItem('userInfo'));
+            this.addToCart(car_id);
+        } else {
+            localStorage.setItem('gameState','2'); // add state 2
+            this.confirmAuth();
+        }
     }
 
     // Confirm if user logged in
@@ -74,13 +93,12 @@ export class CarDetailPage {
                 {
                     text: 'Cancel',
                     handler: () => {
-                        console.log('Disagree clicked');
+                        localStorage.setItem('gameState','0');
                     }
                 },
                 {
                     text: 'Agree',
                     handler: () => {
-                        // this.navCtrl.push();
                         this.showAuthModal();
                     }
                 }
@@ -116,11 +134,34 @@ export class CarDetailPage {
                 {
                     text: 'Confirm',
                     handler: data => {
-                        this.navCtrl.push(SuccessfulPage);
+                        this.showSuccessToast('Your offer was added successfully! we will email to your email '+this.user.email+' or call to your phone ' + this.user.mobile + '. Please wait for a while...');
                     }
                 }
             ]
         });
         prompt.present();
     }
-}
+
+    showSuccessToast (msg: string) {
+        let toast = this.toastCtrl.create({
+            message: msg,
+            duration: 3000
+        });
+        toast.present();
+        this.navCtrl.pop();
+    }
+
+    addToCart (car_id : number) {
+        console.log(this.cartAry);
+        for(let i = 0; i < this.cartAry.length; i++){
+            if(this.cartAry[i] == car_id) {
+                this.showSuccessToast('Already this car is added on your cart. Please check your cart');
+                return;
+            }
+        }
+        
+        this.cartAry.push(car_id);
+        localStorage.setItem('cart', JSON.stringify(this.cartAry));
+        this.showSuccessToast('Successfully added '+ this.car.name + ' with $' + this.car.price);
+    }
+ }
