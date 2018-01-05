@@ -1,0 +1,16 @@
+page-home {
+    .car-card {
+        .mod-car {
+            line-height: 1.5;
+            ion-icon {
+                margin-right: 0.7em;
+            }
+        }
+        button {
+            margin-bottom: -1.5em !important;
+        }
+        div > p {
+            text-align: right;
+        }
+    }
+}

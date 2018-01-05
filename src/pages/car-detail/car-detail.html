@@ -1,0 +1,42 @@
+<!--
+  Generated template for the CarDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>{{ car.model }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-card>
+        <!-- Load Image Gallary -->
+        <ion-slides pager>
+            <ion-slide *ngFor="let img of car.gallary">
+                <img src="{{ img }}">
+            </ion-slide>            
+        </ion-slides>
+        <!-- Load Conetnts for car detail -->
+        <ion-card-content>
+            <ion-card-title> {{ car.name }} </ion-card-title>
+            <p> {{ car.comment }} </p>
+        </ion-card-content>
+        <ion-item class="sub-item">
+            <span item-left icon-left>${{ car.price }}</span>
+            <span item-left icon-left>| {{ car.amount }}cars</span> 
+            <!-- <ion-icon name="car"></ion-icon> -->
+            <ion-buttons item-end>
+                <button ion-button color="secondary" outline small icon-left (click)="onBuyCar(car.id)"><ion-icon name="pricetag"></ion-icon>Buy</button>
+                <button ion-button outline small icon-left (click)="onAddToCart(car.id)"><ion-icon name="cart"></ion-icon>Add</button>
+            </ion-buttons>
+        </ion-item>
+        <!-- load map view with car location -->
+        <p class="padding-h font-title">Location</p>
+        <div #map id="map"></div>
+    </ion-card>
+</ion-content>

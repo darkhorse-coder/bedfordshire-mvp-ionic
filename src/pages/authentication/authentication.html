@@ -1,0 +1,46 @@
+<!--
+  Generated template for the AuthenticationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="dark">
+        <ion-title>Authentication</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="closeModal()"><ion-icon name="close"></ion-icon></button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating>Full Name</ion-label>
+        <ion-input [(ngModel)]="user.username" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input [(ngModel)]="user.email" type="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Mobile</ion-label>
+        <ion-input [(ngModel)]="user.mobile" type="mobile"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating>Address</ion-label>
+        <ion-input [(ngModel)]="user.address" type="text"></ion-input>
+    </ion-item>
+
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <button ion-button color="secondary" block icon-left (click)="registerInfo()"><ion-icon name="log-in"></ion-icon>Register</button>
+    </ion-toolbar>
+</ion-footer>

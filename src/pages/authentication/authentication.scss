@@ -1,0 +1,20 @@
+page-authentication {
+    ion-footer {
+        ion-toolbar {
+            padding: 0 !important;
+        }
+        .toolbar-background {
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+        button {
+            border-radius: 0 !important;
+            margin: 0 !important;
+            height: 3.5em !important;
+        }
+        .button-md {
+            height: 4.0em !important;
+        }
+    }
+}
