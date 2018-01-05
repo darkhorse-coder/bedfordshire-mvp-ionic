@@ -74,14 +74,14 @@ export class AuthenticationPage {
     addToCart (car_id : number) {
         this.cartAry.push(car_id);
         localStorage.setItem('cart', JSON.stringify(this.cartAry));
-        this.showSuccessToast('Successful added to cart. '+ this.car.name +', $'+ this.car.price +'');
+        this.showSuccessToast('Successful added to cart. '+ this.car.name +', '+ this.car.unit + this.car.price +'');
     }
 
     // Progressing purchase
     purchaseCar () {
         let prompt = this.alertCtrl.create({
             title: this.car.name,
-            message: this.car.price + this.car.unit + "\n Please confirm your card number.",
+            message:  this.car.unit + this.car.price + "\n Please confirm your card number.",
             inputs: [
                 {
                     name: 'cardnumber',

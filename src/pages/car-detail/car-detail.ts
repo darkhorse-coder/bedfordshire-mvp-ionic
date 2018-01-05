@@ -51,7 +51,7 @@ export class CarDetailPage {
         
         let mapOptions = {
             center: latLng,
-            zoom: 15,
+            zoom: 8,
             mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         
@@ -117,7 +117,7 @@ export class CarDetailPage {
     purchaseCar () {
         let prompt = this.alertCtrl.create({
             title: this.car.name,
-            message: this.car.price + this.car.unit + "\n Please confirm your card number.",
+            message: this.car.unit + this.car.price + "\n Please confirm your card number.",
             inputs: [
                 {
                     name: 'cardnumber',
@@ -162,6 +162,6 @@ export class CarDetailPage {
         
         this.cartAry.push(car_id);
         localStorage.setItem('cart', JSON.stringify(this.cartAry));
-        this.showSuccessToast('Successfully added '+ this.car.name + ' with $' + this.car.price);
+        this.showSuccessToast('Successfully added '+ this.car.name + ' with ' + this.car.unit + this.car.price);
     }
  }

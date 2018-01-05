@@ -27,7 +27,7 @@
             <p> {{ car.comment }} </p>
         </ion-card-content>
         <ion-item class="sub-item">
-            <span item-left icon-left>${{ car.price }}</span>
+            <span item-left icon-left>{{ car.unit }}{{ car.price }}</span>
             <span item-left icon-left>| {{ car.amount }}cars</span> 
             <!-- <ion-icon name="car"></ion-icon> -->
             <ion-buttons item-end>

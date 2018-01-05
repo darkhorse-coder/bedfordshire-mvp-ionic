@@ -2,7 +2,7 @@
     "cars" : [
         {
             "id" : 1,
-            "name" : "rolls Royce",
+            "name" : "Rolls Royce(capital ‘R’)",
             "model" : "Luxury",
             "color" : "red",
             "thembnail" : "assets/cars/1-1/thembe.jpg",
@@ -13,12 +13,12 @@
                 "assets/cars/1-1/4.jpg"
             ],
             "location" : {
-                "lat" : 56.89,
-                "lng" : 98.09
+                "lat" : 53.2630493,
+                "lng" : -4.5293603
             },
-            "price" : 5478,
-            "unit" : "USD",
-            "amount" : 45,
+            "price" : "200,000",
+            "unit" : "£",
+            "amount" : 450,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
@@ -34,17 +34,17 @@
                 "assets/cars/1-2/4.jpg"
             ],
             "location" : {
-                "lat" : 78.89,
-                "lng" : 58.09
+                "lat" : 53.220978,
+                "lng" : -4.5294145
             },
-            "price" : 8900,
-            "unit" : "USD",
+            "price" : "90,000",
+            "unit" : "£",
             "amount" : 16,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 3,
-            "name" : "Mercedes Maybach",
+            "name" : "Bentley",
             "model" : "Luxury",
             "color" : "red",
             "thembnail" : "assets/cars/1-3/thembe.jpg",
@@ -55,17 +55,17 @@
                 "assets/cars/1-3/4.jpg"
             ],
             "location" : {
-                "lat" : 56.89,
-                "lng" : 98.09
+                "lat" : 53.220978,
+                "lng" : -4.5294145
             },
-            "price" : 5478,
-            "unit" : "USD",
+            "price" : "90,000",
+            "unit" : "£",
             "amount" : 45,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 4,
-            "name" : "Mercedes Maybach",
+            "name" : "BMW 7 series",
             "model" : "Luxury",
             "color" : "dark blue",
             "thembnail" : "assets/cars/1-4/thembe.jpg",
@@ -76,17 +76,17 @@
                 "assets/cars/1-4/4.jpg"
             ],
             "location" : {
-                "lat" : 90.7,
-                "lng" : 79.98
+                "lat" : 51.292567,
+                "lng" : -0.8025187
             },
-            "price" : 12000,
-            "unit" : "USD",
+            "price" : "70,000",
+            "unit" : "£",
             "amount" : 8,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 5,
-            "name" : "BMW7 series",
+            "name" : "Aston Martin",
             "model" : "Luxury",
             "color" : "black",
             "thembnail" : "assets/cars/1-5/thembe.jpg",
@@ -97,18 +97,18 @@
                 "assets/cars/1-5/4.jpg"
             ],
             "location" : {
-                "lat" : 120.78,
-                "lng" : 35.16
+                "lat" : 52.1479473,
+                "lng" : 0.0198292
             },
-            "price" : 8900,
-            "unit" : "USD",
+            "price" : "120,000",
+            "unit" : "£",
             "amount" : 28,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 6,
-            "name" : "Aston martin",
-            "model" : "Luxury",
+            "name" : "Lamborghini Veneno",
+            "model" : "Super cars",
             "color" : "white",
             "thembnail" : "assets/cars/2-1/thembe.jpg",
             "gallary" : [
@@ -118,17 +118,17 @@
                 "assets/cars/2-1/4.jpg"
             ],
             "location" : {
-                "lat" : 160.3,
-                "lng" : 45.6
+                "lat" : 52.1466093,
+                "lng" : -0.4916217
             },
-            "price" : 13250,
-            "unit" : "USD",
+            "price" : "120,000",
+            "unit" : "£",
             "amount" : 20,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 7,
-            "name" : "lamborghni",
+            "name" : "Ferrari",
             "model" : "Super cars",
             "color" : "white",
             "thembnail" : "assets/cars/2-2/thembe.jpg",
@@ -141,17 +141,17 @@
                 "assets/cars/2-2/6.jpg"
             ],
             "location" : {
-                "lat" : 174.88,
-                "lng" : 85.46
+                "lat" : 52.541707, 
+                "lng" : -1.476346
             },
-            "price" : 17000,
-            "unit" : "USD",
+            "price" : "200,000",
+            "unit" : "£",
             "amount" : 150,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 8,
-            "name" : "Ferrari",
+            "name" : "McLaren",
             "model" : "Super cars",
             "color" : "dark-gray",
             "thembnail" : "assets/cars/2-3/thembe.jpg",
@@ -163,17 +163,17 @@
                 "assets/cars/2-3/5.jpg"
             ],
             "location" : {
-                "lat" : 234.88,
-                "lng" : 46.46
+                "lat" : 53.522317, 
+                "lng" : -2.212376
             },
-            "price" : 15333,
-            "unit" : "USD",
+            "price" : "200,000",
+            "unit" : "£",
             "amount" : 40,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 9,
-            "name" : "lamborghni",
+            "name" : "Nissan GTR",
             "model" : "Super cars",
             "color" : "white",
             "thembnail" : "assets/cars/2-4/thembe.jpg",
@@ -184,18 +184,18 @@
                 "assets/cars/2-4/4.jpg"
             ],
             "location" : {
-                "lat" : 274.43,
-                "lng" : 120.48
+                "lat" : 53.5754483,
+                "lng" : -4.0032554
             },
-            "price" : 20000,
-            "unit" : "USD",
-            "amount" : 20,
+            "price" : "80,000",
+            "unit" : "£",
+            "amount" : 2000,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 10,
-            "name" : "Mclaren",
-            "model" : "Super cars",
+            "name" : "BMW X5",
+            "model" : "4X4 cars",
             "color" : "black",
             "thembnail" : "assets/cars/3-1/thembe.jpg",
             "gallary" : [
@@ -207,18 +207,18 @@
                 "assets/cars/3-1/6.jpg"
             ],
             "location" : {
-                "lat" : 239.43,
-                "lng" : 190.77
+                "lat" : 56.417818,
+                "lng" : -5.7038816
             },
-            "price" : 16400,
-            "unit" : "USD",
+            "price" : "65,000",
+            "unit" : "£",
             "amount" : 32,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 11,
-            "name" : "Nissan GTR",
-            "model" : "Super cars",
+            "name" : "Range Rover",
+            "model" : "4X4 cars",
             "color" : "dark-blue",
             "thembnail" : "assets/cars/3-2/thembe.jpg",
             "gallary" : [
@@ -228,17 +228,17 @@
                 "assets/cars/3-2/4.jpg"
             ],
             "location" : {
-                "lat" : 39.43,
-                "lng" : 64.77
+                "lat" : 52.0284635,
+                "lng" : -5.4527827
             },
-            "price" : 28900,
-            "unit" : "USD",
-            "amount" : 10,
+            "price" : "70,000",
+            "unit" : "£",
+            "amount" : 1000,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 12,
-            "name" : "BMW x5",
+            "name" : "Mercedes G Wagon",
             "model" : "4X4 cars",
             "color" : "black",
             "thembnail" : "assets/cars/3-3/thembe.jpg",
@@ -249,17 +249,17 @@
                 "assets/cars/3-3/4.jpg"
             ],
             "location" : {
-                "lat" : 46.83,
-                "lng" : 139.77
+                "lat" : 51.9858921,
+                "lng" : -5.4528385
             },
-            "price" : 12070,
-            "unit" : "USD",
-            "amount" : 30,
+            "price" : "125,000",
+            "unit" : "£",
+            "amount" : 300,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 13,
-            "name" : "Range rover vogue",
+            "name" : "Audi Q7",
             "model" : "4X4 cars",
             "color" : "white",
             "thembnail" : "assets/cars/3-4/thembe.jpg",
@@ -270,18 +270,18 @@
                 "assets/cars/3-4/4.jpg"
             ],
             "location" : {
-                "lat" : 146.23,
-                "lng" : 189.345
+                "lat" : 51.9433048,
+                "lng" : -5.4528943
             },
-            "price" : 14000,
-            "unit" : "USD",
+            "price" : "65,000",
+            "unit" : "£",
             "amount" : 76,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 14,
-            "name" : "Mercades G Wagon",
-            "model" : "4X4 cars",
+            "name" : "Jaguar x type",
+            "model" : "Saloon cars",
             "color" : "white",
             "thembnail" : "assets/cars/4-1/thembe.jpg",
             "gallary" : [
@@ -291,18 +291,18 @@
                 "assets/cars/4-1/4.jpg"
             ],
             "location" : {
-                "lat" : 240.23,
-                "lng" : 49.345
+                "lat" : 53.7011308,
+                "lng" : -4.0030942
             },
-            "price" : 13600,
-            "unit" : "USD",
+            "price" : "65,000",
+            "unit" : "£",
             "amount" : 55,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 15,
-            "name" : "Audi Q7",
-            "model" : "4X4 cars",
+            "name" : "Audi A7",
+            "model" : "Saloon cars",
             "color" : "gold",
             "thembnail" : "assets/cars/4-2/thembe.jpg",
             "gallary" : [
@@ -312,17 +312,17 @@
                 "assets/cars/4-2/4.jpg"
             ],
             "location" : {
-                "lat" : 219.253,
-                "lng" : 76.44
+                "lat" : 53.2836451,
+                "lng" : -3.7373837
             },
-            "price" : 11900,
-            "unit" : "USD",
+            "price" : "40,000",
+            "unit" : "£",
             "amount" : 40,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 16,
-            "name" : "Jaguar xf",
+            "name" : "BMW 5 series",
             "model" : "Saloon cars",
             "color" : "gold",
             "thembnail" : "assets/cars/4-3/thembe.jpg",
@@ -333,17 +333,17 @@
                 "assets/cars/4-3/4.jpg"
             ],
             "location" : {
-                "lat" : 56.253,
-                "lng" : 135.44
+                "lat" : 53.3605087,
+                "lng" : -4.4718259
             },
-            "price" : 16700,
-            "unit" : "USD",
+            "price" : "50,000",
+            "unit" : "£",
             "amount" : 26,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         },
         {
             "id" : 17,
-            "name" : "Audi a7",
+            "name" : "Mercedes convertible",
             "model" : "Saloon cars",
             "color" : "white",
             "thembnail" : "assets/cars/4-4/thembe.jpg",
@@ -354,11 +354,11 @@
                 "assets/cars/4-4/4.jpg"
             ],
             "location" : {
-                "lat" : 99.45,
-                "lng" : 78.905
+                "lat" : 51.7941564,
+                "lng" : -0.065165
             },
-            "price" : 25700,
-            "unit" : "USD",
+            "price" : "50,000",
+            "unit" : "£",
             "amount" : 38,
             "comment" : "This it example cars. it will be car detail data on dummy. ok great!!"
         }

@@ -26,7 +26,7 @@
             <p class="mod-car"><ion-icon name="car"></ion-icon>{{ car.model }}</p>
             <p class="ellpsis-text">{{ car.comment }}</p>
             <div item-end>
-                <p>{{ car.price }}{{ car.unit }}</p>
+                <p>{{ car.unit }}{{ car.price }}</p>
                 <button ion-button icon-left color="mid-gray" (click)="onCarDetail(car.id)"><ion-icon name="eye"></ion-icon>show...</button>
             </div>
         </ion-item>
