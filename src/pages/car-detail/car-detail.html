@@ -35,8 +35,31 @@
                 <button ion-button outline small icon-left (click)="onAddToCart(car.id)"><ion-icon name="cart"></ion-icon>Add</button>
             </ion-buttons>
         </ion-item>
+        <ion-item-group>
+            <ion-item-divider color="light">Running costs</ion-item-divider>
+            <ion-item><p float-left>Urban mpg</p><p float-right>{{ car.runing_cost.urban }}</p></ion-item>
+            <ion-item><p float-left>Extra Urban mpg</p><p float-right>{{ car.runing_cost.extra }}</p></ion-item>
+            <ion-item><p float-left>Average mpg</p><p float-right>{{ car.runing_cost.everage }}</p></ion-item>
+            <ion-item><p float-left>CO2 emissions</p><p float-right>{{ car.runing_cost.co2 }}</p></ion-item>
+            <ion-item><p float-left>Annual Tax</p><p float-right>{{ car.runing_cost.annual }}</p></ion-item>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item-divider color="light">Performance</ion-item-divider>
+            <ion-item><p float-left>Engine power</p><p float-right>{{ car.performance.engin_power }}</p></ion-item>
+            <ion-item><p float-left>Engine size</p><p float-right>{{ car.performance.engin_size }}</p></ion-item>
+            <ion-item><p float-left>Brochure Engine size</p><p float-right>{{ car.performance.b_engin_size }}</p></ion-item>
+            <ion-item><p float-left>Acceleration(0-60mph)</p><p float-right>{{ car.performance.acceleration }}</p></ion-item>
+            <ion-item><p float-left>Top speed</p><p float-right>{{ car.performance.top_speed }}</p></ion-item>
+            <ion-item><p float-left>Drivetrain</p><p float-right>{{ car.performance.drivetrain }}</p></ion-item>
+        </ion-item-group>
+        <ion-item-group>
+            <ion-item-divider color="light">Practicality</ion-item-divider>
+            <ion-item><p float-left>No. of doors</p><p float-right>{{ car.practicality.doors }}</p></ion-item>
+            <ion-item><p float-left>No. of seats</p><p float-right>{{ car.practicality.seats }}</p></ion-item>
+        </ion-item-group>
         <!-- load map view with car location -->
-        <p class="padding-h font-title">Location</p>
+        <ion-item-divider color="light">Location</ion-item-divider>
+        <!-- <p class="padding-h font-title">Location</p> -->
         <div #map id="map"></div>
     </ion-card>
 </ion-content>

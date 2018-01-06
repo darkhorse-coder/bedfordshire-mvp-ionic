@@ -15,4 +15,24 @@ page-car-detail {
     .button-small-ios {
         padding: 0 0.6em;
     }
+    ion-item-divider {
+        ion-label {
+            font-size: 1.8rem !important;
+        }
+    }
+    ion-item-group {
+        ion-item {
+            font-size: 1.2rem !important;
+            min-height: 0.8em !important;
+            .input-wrapper {
+                border-bottom: dotted 1px rgb(156, 156, 156) !important;
+                p {
+                    color: gray !important;
+                }
+            }
+            ion-label {
+                margin: 0.5rem auto !important;
+            }
+        }
+    }
 }
