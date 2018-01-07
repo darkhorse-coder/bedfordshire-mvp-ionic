@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { ViewController } from 'ionic-angular/navigation/view-controller';
 import { User } from '../../providers/car/car';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
@@ -12,7 +12,6 @@ import { ToastController } from 'ionic-angular/components/toast/toast-controller
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
     selector: 'page-authentication',
     templateUrl: 'authentication.html',

@@ -16,7 +16,7 @@ export class ServicesProvider {
     }
 
     getCars(): Observable<{}>  {
-        return this.http.get('../../assets/dummy.json').pipe(
+        return this.http.get('assets/dummy.json').pipe(
             map(this.extractData),
             catchError(this.handleError),
             tap(this.progressData)

@@ -1,5 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular/components/alert/alert-controller';
 import { ModalController } from 'ionic-angular/components/modal/modal-controller';
 import { AuthenticationPage } from '../authentication/authentication';
@@ -14,7 +14,7 @@ import { ToastController } from 'ionic-angular/components/toast/toast-controller
 
 declare var google;
 
-@IonicPage()
+// @IonicPage()
 @Component({
   selector: 'page-car-detail',
   templateUrl: 'car-detail.html',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { ServicesProvider } from '../../providers/services/services';
 import { CarDetailPage } from '../car-detail/car-detail';
 
@@ -10,7 +10,7 @@ import { CarDetailPage } from '../car-detail/car-detail';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+// @IonicPage()
 @Component({
     selector: 'page-cart',
     templateUrl: 'cart.html',
