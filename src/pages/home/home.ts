@@ -1,3 +1,4 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ServicesProvider } from '../../providers/services/services';
@@ -13,7 +14,7 @@ export class HomePage {
     cars: any;
     searchOn: boolean;
     allCars: any;
-    constructor(public navCtrl: NavController, public navParam: NavParams, public serives: ServicesProvider) {
+    constructor(public navCtrl: NavController, private httpClient:HttpClient, public navParam: NavParams, public serives: ServicesProvider) {
 
     }
 
@@ -26,6 +27,15 @@ export class HomePage {
         this.serives.getCars().subscribe(data => {
             this.allCars = data['cars'];  
             this.searchInit();
+        });
+    }
+
+    callAPI () {
+
+        this.httpClient.post(`http://92.53.67.75:8001/login/`,{username:'admin',password:'ok123456'},{
+            headers: new HttpHeaders().set('Content-Type','application/json')
+        }).subscribe(res=>{
+            console.log(res);
         });
     }
 
